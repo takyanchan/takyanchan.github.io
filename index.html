@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Academic Homepage</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #292929;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 45px auto;
+      padding: 0 28px;
+    }
+
+    h1 { font-size: 31px; margin: 0 0 4px; }
+    h2 {
+      font-size: 23px;
+      margin: 34px 0 12px;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 6px;
+    }
+
+    p { margin: 10px 0; }
+    a { color: #1769aa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .portrait {
+      float: right;
+      width: 180px;
+      height: 225px;
+      object-fit: cover;
+      margin: 0 0 20px 30px;
+      border-radius: 4px;
+    }
+
+    .subtitle { color: #666666; font-size: 17px; }
+    .contact { margin: 12px 0 20px; }
+
+    .news {
+      padding-left: 0;
+      list-style: none;
+    }
+    .news li { margin-bottom: 7px; }
+    .date { font-weight: bold; margin-right: 12px; }
+
+    .project {
+      display: flex;
+      gap: 22px;
+      margin: 22px 0 28px;
+      align-items: flex-start;
+    }
+    .project img {
+      width: 235px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .project-info { flex: 1; }
+    .project-title {
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+    .links { margin-top: 8px; }
+    .links a { margin-right: 15px; }
+
+    footer {
+      margin-top: 45px;
+      padding: 15px 0;
+      color: #888888;
+      border-top: 1px solid #eeeeee;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 650px) {
+      .container { margin: 22px auto; padding: 0 18px; }
+      .portrait {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .project { flex-direction: column; gap: 10px; }
+      .project img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+
+<body>
+<main class="container">
+
+  <!-- 第一部分：个人基本信息 -->
+  <header>
+    <img class="portrait" src="profile.jpg" alt="Profile Photo">
+
+    <h1>Deen Chen</h1>
+    <div class="subtitle">
+      Computer Vision | 3D Perception | Robotics
+    </div>
+    <p>Your University / Research Institution</p>
+
+    <div class="contact">
+      <a href="mailto:takyanchan139@gmail.com">Email</a> /
+      <a href="https://github.com/takyanchan">GitHub</a>
+    </div>
+
+    <p>
+      I am a researcher interested in computer vision,
+      3D perception, and intelligent robotic systems.
+      My previous work focuses on visual understanding,
+      point-cloud processing, and practical AI applications.
+    </p>
+
+    <p>
+      My current research interests include robot perception,
+      3D scene understanding, and embodied intelligence.
+    </p>
+  </header>
+
+  <!-- 第二部分：研究方向 -->
+  <section>
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Computer Vision and Video Understanding</li>
+      <li>3D Point Cloud Processing and Perception</li>
+      <li>Robot Perception and Embodied Intelligence</li>
+    </ul>
+  </section>
+
+  <!-- 第三部分：最新动态 -->
+  <section>
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">2026.XX</span>
+        Add your latest research news here.
+      </li>
+      <li><span class="date">2026.XX</span>
+        Add a verified publication or project update here.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 第四部分：论文 -->
+  <section>
+    <h2>Publications</h2>
+
+    <div class="project">
+      <img src="paper1.jpg" alt="Publication Preview">
+      <div class="project-info">
+        <div class="project-title">
+          Title of Your Research Paper
+        </div>
+        <p>Your Name, Co-author Name</p>
+        <p><em>Journal or Conference, Year</em></p>
+        <p class="links">
+          Add verified paper and code links here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 第五部分：项目与Demo -->
+  <section>
+    <h2>Selected Research Projects</h2>
+
+    <div class="project">
+      <img src="project1.jpg" alt="3D Point Cloud">
+      <div class="project-info">
+        <div class="project-title">
+          3D Point-Cloud Weight Estimation
+        </div>
+        <p>
+          A research project involving 3D point-cloud
+          processing and learning-based estimation.
+        </p>
+        <p class="links">
+          Add your GitHub and demonstration links here.
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="project2.jpg" alt="Video Monitoring">
+      <div class="project-info">
+        <div class="project-title">
+          Intelligent Video Monitoring
+        </div>
+        <p>
+          A computer vision project for automated
+          detection and temporal event analysis.
+        </p>
+        <p class="links">
+          Add your GitHub and video links here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Last updated: October 2026
+  </footer>
+
+</main>
+</body>
+</html>
